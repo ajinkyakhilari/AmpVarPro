@@ -33,9 +33,9 @@ conda create -n ont-vc python=3.8 minimap2 samtools fastp snpEff -c bioconda
 
 conda activate ont-vc
 
-Follow the installation instructions of Clair3 from its official GitHub repository.
+### Follow the installation instructions of Clair3 from its official GitHub repository.
 
-## Usage
+# Usage
 Prepare your environment:
 
 Before running the pipeline, make sure all dependencies are installed and your environment is activated.
