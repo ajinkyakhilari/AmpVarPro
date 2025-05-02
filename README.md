@@ -34,7 +34,7 @@ cd AmpVarPro
 Most dependencies can be installed via conda or bioconda channels. It is recommended to create a new conda environment.
 
 ```bash
-conda create -n ont-vc python=3.8 minimap2 samtools fastp snpEff clair3 -c bioconda
+conda create -n ont-vc python=3.9 minimap2 samtools fastp snpEff clair3 -c bioconda
 ```
 
 ```bash
