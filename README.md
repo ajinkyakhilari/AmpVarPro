@@ -57,7 +57,7 @@ AmpVarPro.py --input_directory /path/to/input --min_length 100 --max_length 1500
 ```
 Replace the placeholder paths and parameters with your actual data and desired settings.
 
-Example
+### Example
 
 Assuming you have a directory named data containing subdirectories for each barcode (e.g., barcode01, barcode02, ...), a reference genome file ref.fasta, and the necessary snpeff data and model files:
 
