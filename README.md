@@ -21,17 +21,25 @@ This repository contains a variant calling pipeline tailored for amplicon sequen
 
 Clone the repository:
 
+```bash
 git clone https://github.com/yourusername/ont-amplicon-variant-calling.git
+```
 
+```bash
 cd ont-amplicon-variant-calling
+```
 
-Install dependencies:
+# Install dependencies:
 
 Most dependencies can be installed via conda or bioconda channels. It is recommended to create a new conda environment.
 
-##### conda create -n ont-vc python=3.8 minimap2 samtools fastp snpEff -c bioconda
+```bash
+conda create -n ont-vc python=3.8 minimap2 samtools fastp snpEff -c bioconda
+```
 
-##### conda activate ont-vc
+```bash
+conda activate ont-vc
+```
 
 #### Follow the installation instructions of Clair3 from its official GitHub repository.
 
@@ -44,15 +52,18 @@ Before running the pipeline, make sure all dependencies are installed and your e
 
 The pipeline is executed through a Python script that requires several arguments, including paths to input files and directories, reference genome, and quality filtering parameters.
 
-##### AmpVarPro.py --input_directory /path/to/input --min_length 100 --max_length 1500 --threads 8 --reference_genome /path/to/ref.fasta --phred_quality 20 --snpeff_data /path/to/snpeff/data --model /path/to/model
-
+```bash
+AmpVarPro.py --input_directory /path/to/input --min_length 100 --max_length 1500 --threads 8 --reference_genome /path/to/ref.fasta --phred_quality 20 --snpeff_data /path/to/snpeff/data --model /path/to/model
+```
 Replace the placeholder paths and parameters with your actual data and desired settings.
 
 Example
 
 Assuming you have a directory named data containing subdirectories for each barcode (e.g., barcode01, barcode02, ...), a reference genome file ref.fasta, and the necessary snpeff data and model files:
 
-##### python AmpVarPro.py --input_directory ./data --min_length 100 --max_length 1500 --threads 4 --reference_genome ./ref.fasta --phred_quality 20 --snpeff_data ./snpeff/data --model ./clair/model
+```bash
+python AmpVarPro.py --input_directory ./data --min_length 100 --max_length 1500 --threads 4 --reference_genome ./ref.fasta --phred_quality 20 --snpeff_data ./snpeff/data --model ./clair/model
+```
 
 This command will process each barcode directory in parallel, perform variant calling, and output annotated variants.
 
