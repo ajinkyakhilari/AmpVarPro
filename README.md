@@ -22,7 +22,7 @@ This repository contains a variant calling pipeline tailored for amplicon sequen
 Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/ont-amplicon-variant-calling.git
+git clone https://github.com/ajinkyakhilari/AmpVarPro.git
 ```
 
 ```bash
