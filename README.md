@@ -26,7 +26,7 @@ git clone https://github.com/ajinkyakhilari/AmpVarPro.git
 ```
 
 ```bash
-cd ont-amplicon-variant-calling
+cd AmpVarPro
 ```
 
 # Install dependencies:
