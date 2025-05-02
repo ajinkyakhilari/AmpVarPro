@@ -5,17 +5,17 @@ This repository contains a variant calling pipeline tailored for amplicon sequen
 
 # Prerequisites
 
-Python 3.x
+- Python 3.x
 
-minimap2
+- minimap2
 
-samtools
+- samtools
 
-fastp
+- fastp
 
-Clair3 (and its dependencies)
+- Clair3 (and its dependencies)
 
-snpEff
+- snpEff
 
 # Installation
 
